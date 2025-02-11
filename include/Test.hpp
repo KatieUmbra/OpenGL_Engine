@@ -14,7 +14,6 @@ public:
 	virtual ~test()
 	{
 	}
-
 	virtual void on_update(float delta_time)
 	{
 	}

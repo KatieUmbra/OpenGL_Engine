@@ -1,4 +1,5 @@
 #include "ImGui.hpp"
+#include "Test.hpp"
 #define GLFW_INCLUDE_NONE
 #include "Logging.hpp"
 #include "TestClearColor.hpp"
@@ -29,8 +30,11 @@ auto main() -> int
 
 	gl::test::clear_color clear_test{};
 	gl::test::texture texture_test{renderer};
+	// gl::test::collisions collisions_test{renderer};
+
 	gl::test::register_test(clear_test);
 	gl::test::register_test(texture_test);
+	// gl::test::register_test(collisions_test);
 
 	// =======================================================
 

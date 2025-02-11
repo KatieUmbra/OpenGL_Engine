@@ -3,6 +3,9 @@ PROJECT(ogl LANGUAGES CXX)
 
 if (NOT CMAKE_BUILD_TYPE)
 	set(CMAKE_BUILD_TYPE Debug)
+endif()
+
+if (CMAKE_BUILD_TYPE EQUAL "Debug")
     add_compile_definitions(_DEBUG)
 endif()
 
@@ -30,6 +33,7 @@ set(SOURCES
     ./test/TestClearColor.cpp
     ./test/TestTexture.cpp
     ./test/TestPerspective.cpp
+    ./test/TestCollisions.cpp
     ./libs/imgui/imgui_impl_glfw.cpp
     ./libs/imgui/imgui_impl_opengl3.cpp
     )
